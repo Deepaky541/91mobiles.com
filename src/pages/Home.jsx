@@ -6,11 +6,13 @@ export const Home = () => {
     const [data, setdata] = useState({})
     let email=localStorage.getItem("email");
     useEffect(() => {
-       axios.get(`http://localhost:8080/users`, {
-         params: {
-           "email": email,
-         },
-       }).then((res)=>setdata(res.data[0]))
+       axios
+         .get(`https://shrouded-mesa-85630.herokuapp.com/users`, {
+           params: {
+             email: email,
+           },
+         })
+         .then((res) => setdata(res.data[0]));
     }, [])
 
   return (

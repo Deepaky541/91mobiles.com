@@ -14,13 +14,16 @@ export const SignUp = () => {
 
       const handleSubmit= ()=>{
           axios
-              .get(`http://localhost:8080/users`,{
-                  params:{
-		          "email":email
-                }
-	          }
-            )
-              .then((res) => ((res.data[0].email==email)?(alert("user already exists"),setflag(false),flag=false):(setflag(true),flag=true)))
+            .get(`https://shrouded-mesa-85630.herokuapp.com/users`, {
+              params: {
+                email: email,
+              },
+            })
+            .then((res) =>
+              res.data[0].email == email
+                ? (alert("user already exists"), setflag(false), (flag = false))
+                : (setflag(true), (flag = true))
+            );
 
           if(name.length>0 && number.length>0 && email.length>0 && password.length>0 && flag===true)
           {
@@ -40,7 +43,7 @@ export const SignUp = () => {
              
               else {
                 axios
-                  .post("http://localhost:8080/users", {
+                  .post("https://shrouded-mesa-85630.herokuapp.com/users", {
                     name: name,
                     number: number,
                     email: email,
