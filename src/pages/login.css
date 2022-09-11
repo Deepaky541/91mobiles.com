@@ -1,0 +1,43 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.xda-developers.com/files/2021/05/Android12_-Material-You.jpg");
+}
+
+
+.frm{
+     background-image: linear-gradient(to bottom right,rgb(203, 203, 30), rgb(115, 77, 6));
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    align-self: center;
+}
+.frm input{
+    padding: 10px;
+padding-left: 50px;
+padding-right: 50px;
+border-radius: 20px;
+margin-bottom: 20px;
+font-weight: bold;
+border: none;
+}
+.frm label{
+    font-weight: bolder;
+    color: white;
+}
+.frm button{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.xda-developers.com/files/2021/05/Android12_-Material-You.jpg");
+ 
+}
+.sup input
+{
+   border: none;
+   padding: 20px;
+   width: 25vw;
+   border-radius: 20px;
+}
+
+.sup{
+     background-image: linear-gradient(to bottom right,rgb(203, 203, 30), rgb(115, 77, 6));
+    padding-top: 50px;
+    width: 40vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+   height: 65vh;
+}
+
+.sup button{
+    padding: 20px;
+    width: 20vw;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color:white
+}
+@media screen and (max-width: 580px) {
+  .sup{
+      width: 70vw;
+  }
+  .sup input{
+      width:50vw;
+  }
+}

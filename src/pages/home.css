@@ -1,0 +1,21 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+     background-image: linear-gradient(to bottom right,rgb(203, 203, 30), rgb(115, 77, 6));
+     padding: 40px;
+     border-radius: 20px;
+     margin-top: 20px;
+     color: white;
+}
+.avatar img{
+    width: 100px;
+}
+.details{
+    text-align: start;
+    border-left: 2px solid white;
+}
+.details p{
+    padding-left: 10px;
+}
