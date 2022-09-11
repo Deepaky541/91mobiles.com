@@ -101,39 +101,3 @@ export const SignUp = () => {
   );
 }
 
-{
-  /*
-1 import React, { useState, useEffect } from 'react';
-2
-3 export default function Upload Images() {
-4 const [images, setImages] = useState([]);
-5 const [imageURLs, setImageURLS] = useState([]);
-6
-7 useEffect(() => {
-if (images.length< 1) return;
-const newImageUrls = [];
-10
-images.forEach (image => newImageURLs.push(URL.createObjectURL(image))); setImageURLs (newImageUrls);
-11
-12
-}, [images]);
-13
-14
-15
-function onImageChange(e) { setImages([...e.target.files]);
-16
-17
-}
-18
-19
-return (
-20
-<input type="file" multiple accept="image/" onChange={on ImageChange} /> {imageURLs.map(imageSrc => <img src={imageSrc} />) }
-21
-22
-28
-</>
-);
-24
-*/
-}
